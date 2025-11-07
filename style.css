@@ -1,0 +1,270 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+    padding-bottom: 50px;
+}
+.navbar {
+    background-color: rgb(12, 9, 25);
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+}
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+}
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+.home-section {
+    position: relative;
+    height: 100vh;
+    background: url('panagamuwa.JPG') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 32px;
+    color: white;
+    z-index: 0; 
+}
+.home-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1; 
+}
+
+.solution-section {
+    position: relative;
+    height: 100vh;
+    background: url('solutions.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 48px;
+    z-index: 0; 
+}
+
+.solution-section::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.575);
+    z-index: -1;
+}
+
+.issue-section {
+    position: relative;
+    height: 100vh;
+    background: url('local\ issues.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 48px;
+    z-index: 0; 
+}
+
+.issue-section::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.event-section {
+    position: relative;
+    height: 100vh;
+    background: url('people.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 32px;
+    color: white;
+    z-index: 0; 
+}
+
+.event-section::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.599);
+    z-index: -1;
+}
+
+#about{
+    margin: 0px 140px 0px 140px;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.255);
+    color: white;
+    padding: 48px;
+    margin-top: -170px;
+    border-radius: 8px;
+}
+
+.overlay2 {
+    background-color: rgba(0, 0, 0, 0.255);
+    color: white;
+    margin-top: -200px;
+    padding: 10px;
+    width: 90%;
+    max-width: 1000px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 8px;
+}
+
+.heading {
+    color: white;
+    font-size: 100px;
+}
+
+.heading2 {
+    color: white;
+    font-size: 80px;
+}
+
+.heading3 {
+    color: white;
+    font-size: 80px;
+}
+
+.description {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 40px;
+    color: rgb(126, 126, 126);
+}
+
+section {
+    padding: 32px;
+    text-align: center;
+}
+
+.display{
+    color: azure;
+}
+
+.issue-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    justify-content: center;
+}
+
+.issue-box {
+    border: 1px solid #ccc;
+    padding: 24px;
+    border-radius: 12px;
+}
+
+.issue-box img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.solution {
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.solution img {
+    width: 200px;
+    border-radius: 30px;
+    margin-right: 48px;
+}
+
+.events-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.events-grid img {
+    width: 200px;
+    border-radius: 100%;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    background-color: rgb(0, 0, 0);
+    object-fit: cover;
+    height: 100vh;
+}
+
+form input, form textarea {
+    width: 300px;
+    padding: 10px;
+}
+
+.button {
+    display: flex;
+    gap: 10px;
+    background-color: rgb(38, 103, 172);
+    color: white;
+    border: black;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.feedback {
+    background: white;
+    background-color: rgba(29, 30, 31, 0.456);
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(118, 115, 115, 0.623);
+    width: 300px;
+    color: rgb(94, 88, 88);
+    background: url('feedback\ background.jpeg') no-repeat center center/cover;
+}
+
+
+.feedback-head {
+    color: white;
+    font-size: 45px;
+    margin-bottom: -3px;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10px;
+    padding: 3px;
+    background: linear-gradient(to right, rgb(31, 31, 36), rgb(2, 4, 16));
+    color: rgb(123, 123, 123);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}

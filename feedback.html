@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- mobile responsiveness -->
+        <title>Vue Js</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    </head>
+    
+    <body>
+        <nav class="navbar">
+        <div class="logo">Smart City Solutions</div>
+        <ul class="nav-links">
+            <li><a href="Home page.html">Home</a></li>
+            <li><a href="issues.html">Local Issues</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="event.html">Community Events</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+         </nav>
+
+
+        <div id="app">
+            <h2 class="feedback-head">Got a Minute? Share Your Thoughts!</h2>
+            <p style="color: white;">We'd love to hear your thoughts and ideas.</p>
+            <div class="feedback">
+                <label>Name : <br>
+                <input type="text" placeholder="Enter Your Name" v-model="name"><br><br>
+                </label>
+
+                <label>Feedback :</label><br>
+                <textarea placeholder="Enter your feedback" v-model="comment"></textarea><br><br>
+
+                <button class="button" @click="submit">Submit Feedback</button>
+                
+
+            </div>
+
+            <div class="display">
+                <ul type="none">
+                    <li v-for = "(feedback,index) in feedbacks">
+                        <b> {{feedback.name}} </b><br> {{feedback.comment}}
+                    </li>
+                </ul>
+            </div>    
+        </div>
+
+    </body>
+</html>
+
+<footer>
+    <p class="feedbackfooter">© 2025 Smart Panagamuwa | Developed by M.H.Fathima Hamdha | Email: hamdha0122@gmail.com</p>
+</footer>
+
